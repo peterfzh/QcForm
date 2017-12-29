@@ -8,7 +8,7 @@ using DotRas;
 using System.Text.RegularExpressions;
 
 
-namespace ILazy.Net
+namespace QcForm.Net
 {
     /// <summary>
     /// VPN的基类信息
