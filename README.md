@@ -16,6 +16,10 @@ QcForm.Net.VPN vpn = new QcForm.Net.VPN()
 	PassWord = VPN的密码,
 };
 
+///创建或更新
+
+vpn.CreateOrUpdate();
+
 ~~~
 
 
