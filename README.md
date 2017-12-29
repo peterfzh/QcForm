@@ -21,13 +21,17 @@ vpn.CreateOrUpdate();
 
 ///VPN的异步委托事件
 
-连接成功事件 vpn.OnConectSuccess += (string msg) => {  //链接成功后您要执行的事件 };
+//连接成功事件 
+vpn.OnConectSuccess += (string msg) => {  //链接成功后您要执行的事件 };
 
-连接失败事件 vpn.OnConectFaild += (string msg) => {  //连接失败后您要执行的事件 };
+//连接失败事件 
+vpn.OnConectFaild += (string msg) => {  //连接失败后您要执行的事件 };
 
-断开成功事件 vpn.OnDisconectSuccess += (string msg) => {  //断开成功后您要执行的事件 };
+//断开成功事件 
+vpn.OnDisconectSuccess += (string msg) => {  //断开成功后您要执行的事件 };
 
-断开失败事件 vpn.OnDisconectFaild += (string msg) => {  //断开失败后您要执行的事件 };
+//断开失败事件 
+vpn.OnDisconectFaild += (string msg) => {  //断开失败后您要执行的事件 };
 
 
 ///VPN的链接
