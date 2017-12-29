@@ -33,13 +33,11 @@ vpn.OnDisconectSuccess += (string msg) => {  //断开成功后您要执行的事
 //断开失败事件 
 vpn.OnDisconectFaild += (string msg) => {  //断开失败后您要执行的事件 };
 
-
 ///VPN的链接
 vpn.VPNConnect();
 
 ///VPN的断开
 vpn.VPNDisconnect();
-
 ~~~
 
 * ##### 异步的网络请求
@@ -64,11 +62,8 @@ http.OnNotFound += (string msg) => {  //505,404,400等请求失败后您要执�
 //请求成功后 
 http.Request += (object htmlstring) => {  //请求成功后您要执行的事件 };
 
-
 ///执行请求
 http.doRequest();
-
-
 ~~~
 
 
