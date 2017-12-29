@@ -42,7 +42,7 @@ vpn.VPNDisconnect();
 
 * ##### 异步的网络请求
 
-~~~C#
+~~~CSharp
 /// 使用实例
 QcForm.Net.HttpEntry http = new QcForm.Net.HttpEntry()
 {
