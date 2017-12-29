@@ -40,7 +40,8 @@ vpn.VPNConnect();
 vpn.VPNDisconnect();
 ~~~
 
-* ##### 异步的网络请求
+### QcForm.Net.HttpEntry
+* ##### Http异步的网络请求
 
 ~~~CSharp
 /// 使用实例
