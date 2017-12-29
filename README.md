@@ -40,6 +40,33 @@ vpn.VPNConnect();
 ///VPN的断开
 vpn.VPNDisconnect();
 
+~~~
+
+* ##### 异步的网络请求
+
+~~~C#
+/// 使用实例
+QcForm.Net.HttpEntry http = new QcForm.Net.HttpEntry()
+{
+	Url = 请求的地址,
+	Data = 发送的数据(a=a1&b=b1),
+	Method = Mothed.POST | Mothed.GET,
+};
+
+///Http的异步委托事件
+
+//请求失败事件 
+http.OnError += (string msg) => {  //请求失败后您要执行的事件 };
+
+//505,404,400等请求的事件 
+http.OnNotFound += (string msg) => {  //505,404,400等请求失败后您要执行的事件 };
+
+//请求成功后 
+http.Request += (object htmlstring) => {  //请求成功后您要执行的事件 };
+
+
+///执行请求
+http.doRequest();
 
 
 ~~~
